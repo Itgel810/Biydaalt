@@ -1,0 +1,26 @@
+# Flashcard sample file
+# Format: question line, then answer line, separated by blank lines
+
+What is the capital of Mongolia?
+Ulaanbaatar
+
+What is the largest ocean?
+Pacific Ocean
+
+Who wrote Romeo and Juliet?
+William Shakespeare
+
+What is the chemical symbol for water?
+H2O
+
+What is 7 times 8?
+56
+
+What programming language is this project written in?
+Java
+
+What does OOP stand for?
+Object-Oriented Programming
+
+What is the boiling point of water in Celsius?
+100
