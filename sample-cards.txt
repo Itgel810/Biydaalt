@@ -1,26 +1,26 @@
 # Flashcard sample file
 # Format: question line, then answer line, separated by blank lines
 
-What is the capital of Mongolia?
+Mongol ulsiin niisleliin ner yu we?
 Ulaanbaatar
 
-What is the largest ocean?
-Pacific Ocean
+Mongol ulsiin hamgiin tom nuur yu we?
+Khuvsgul
 
-Who wrote Romeo and Juliet?
+Romeo and Juliet hen bichsen be?
 William Shakespeare
 
-What is the chemical symbol for water?
+Usnii himiin element?
 H2O
 
-What is 7 times 8?
+7X8 hed we?
 56
 
-What programming language is this project written in?
-Java
+Labratoriin bagshiin ner?
+Gundsambuu
 
-What does OOP stand for?
+OOP gej yu gesen ug we?
 Object-Oriented Programming
 
-What is the boiling point of water in Celsius?
+Us tselsiin heden gradust butsaldag we?
 100
