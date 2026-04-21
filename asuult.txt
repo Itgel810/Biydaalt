@@ -1,0 +1,26 @@
+# Flashcard sample file
+# Format: question line, then answer line, separated by blank lines
+
+Mongol ulsiin hamgiin urt goloig nerlene uu?
+Orkhon
+
+Mongol ulsiin hamgiin tom nuur yu we?
+Khuvsgul
+
+Python deer list-iin tugsguld utga nemdeg function?
+append()
+
+Chinggis khaan heden ond Mongol ulsiig negtgen baiguulsan be?
+1206
+
+7X8 hed we?
+56
+
+Labratoriin bagshiin ner?
+Gundsambuu
+
+Mongol uls heden aimagtai we?
+21
+
+IPv4 heden bit we?
+32
