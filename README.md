@@ -12,44 +12,41 @@ flashcard <cards-file> [options]
 
 | Option | Description | Default |
 |---|---|---|
-| `--help` | Show help information | - |
-| `--order <order>` | Card ordering strategy | `random` |
-| `--repetitions <num>` | Correct answers required per card | `1` |
-| `--invertCards` | Swap question and answer | `false` |
+| `--help` | Тусламжийн мэдээллийг харуулах | - |
+| `--order <order>` | Картуудыг эрэмбэлэх стратеги | `random` |
+| `--repetitions <num>` | Карт бүрийг бүрэн цээжилсэнд тооцох зөв хариултын тоо | `1` |
+| `--invertCards` | Асуулт болон хариултын байрыг солих | `false` |
 
 ### Order strategies
 
-- `random` — Shuffle cards randomly each round
-- `worst-first` — Cards with the most incorrect answers appear first
-- `recent-mistakes-first` — Cards answered incorrectly in the last round appear first
+- `random` — Үе бүрт картуудыг санамсаргүй байдлаар холино.
+- `worst-first` — Хамгийн олон удаа буруу хариулсан картуудыг эхэнд гаргана.
+- `recent-mistakes-first` — Өмнөх үед (round) алдсан картуудыг хамгийн түрүүнд гаргана.
 
-### Cards file format
 
-A plain text file where each card is a question line followed by an answer line,
-separated by blank lines. Lines starting with `#` are comments.
 
 ```
-# This is a comment
-What is the capital of Mongolia?
-Ulaanbaatar
+# Энэ бол тайлбар
+Монгол улсын нийслэл юу вэ?
+Улаанбаатар
 
-What is 2 + 2?
+2 + 2 хэд вэ?
 4
 ```
 
 ## Examples
 
 ```bash
-# Basic usage
-java -jar flashcard.jar sample-cards.txt
+# Үндсэн хэрэглээ
+java -jar flashcard.jar asuult.txt
 
-# Worst-first ordering, require 3 correct answers
-java -jar flashcard.jar sample-cards.txt --order worst-first --repetitions 3
+# Хамгийн их алдсан картуудыг түрүүлж харах, карт бүр дээр 3 зөв хариулт шаардах
+java -jar flashcard.jar asuult.txt --order worst-first --repetitions 3
 
-# Inverted cards (answer becomes question)
-java -jar flashcard.jar sample-cards.txt --invertCards
+# Асуулт, хариултын байрыг солих (хариултыг асуулт болгох)
+java -jar flashcard.jar asuult.txt --invertCards
 
-# Show help
+# Тусламж харах
 java -jar flashcard.jar --help
 ```
 
@@ -57,10 +54,10 @@ java -jar flashcard.jar --help
 
 | Achievement | Description |
 |---|---|
-| `SPEED` | Average answer time under 5 seconds in a round |
-| `CORRECT` | All cards answered correctly in a round |
-| `REPEAT` | Answered a single card more than 5 times |
-| `CONFIDENT` | Answered a single card correctly at least 3 times |
+| `SPEED` | Нэг үеийн дотор дунджаар 5 секундээс хурдан хариулах |
+| `CORRECT` | Нэг үеийн бүх асуултад алдалгүй зөв хариулах|
+| `REPEAT` | Нэг картыг 5-аас олон удаа давтаж харах |
+| `CONFIDENT` | Нэг картад дор хаяж 3 удаа зөв хариулах |
 
 ## Building
 

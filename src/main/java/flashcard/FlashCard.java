@@ -11,6 +11,7 @@ public class FlashCard {
     private int incorrectCount;
     private boolean mistakeInLastRound;
     private int totalAnswers;
+    private long lastMistakeTime;
 
     /**
      * Creates a new FlashCard.
@@ -25,6 +26,7 @@ public class FlashCard {
         this.incorrectCount = 0;
         this.mistakeInLastRound = false;
         this.totalAnswers = 0;
+        this.lastMistakeTime = 0;
     }
 
     /**
@@ -88,6 +90,16 @@ public class FlashCard {
         incorrectCount++;
         totalAnswers++;
         mistakeInLastRound = true;
+        lastMistakeTime = System.currentTimeMillis();
+    }
+
+    /**
+     * Returns the timestamp of the last mistake.
+     *
+     * @return last mistake time in milliseconds
+     */
+    public long getLastMistakeTime() {
+        return lastMistakeTime;
     }
 
     /**
